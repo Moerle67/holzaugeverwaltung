@@ -1,9 +1,9 @@
 {% load static  %}
 <nav class="navbar shadow p-3 mb-4" style="background-color: rgb(170, 230, 11)" >
     <div class="container-fluid">
-        <a class="navbar-brand link-light" href="{% url 'shop' %}"><img src="{% static 'pics/logo.png'%}" alt="unser Logo" /> </a>
+        <a class="navbar-brand link-light" href="{% url 'shop' %}"><img src="{% static 'pics/logo.png'%}" alt="unser Logo" style="height: 3em;"/> </a>
         <div class="navbar-nav">
-            <div class="f-flex">
+            <div class="d-flex">
                 <a class="nav-link link-light p-2" href="#">Login</a>
                 <a class="nav-link link-light p-2" href="{% url 'warenkorb' %}">Warenkorb</a>
             </div>
