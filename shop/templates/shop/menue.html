@@ -1,3 +1,12 @@
-<a href="{% url 'shop'%}">Shop</a>
-<a href="{% url 'warenkorb'%}">Warenkorb</a>
-<a href="{% url 'kasse'%}">Kasse</a>
+{% load static  %}
+<nav class="navbar shadow p-3 mb-4" style="background-color: rgb(170, 230, 11)" >
+    <div class="container-fluid">
+        <a class="navbar-brand link-light" href="{% url 'shop' %}"><img src="{% static 'pics/logo.png'%}" alt="unser Logo" /> </a>
+        <div class="navbar-nav">
+            <div class="f-flex">
+                <a class="nav-link link-light p-2" href="#">Login</a>
+                <a class="nav-link link-light p-2" href="{% url 'warenkorb' %}">Warenkorb</a>
+            </div>
+        </div>
+    </div>
+</nav>
